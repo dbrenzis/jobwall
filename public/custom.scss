@@ -1,0 +1,132 @@
+$theme-colors: (
+  "Wiwi": #404e7c,
+  "Ing": #86cb92,
+  "GW": #f5d247,
+  "IT": #f25f5c,
+  "NatWi": #50514f,
+  "washedwhite": #fafafa,
+  "darkgrey": #777777,
+  "ltgrey": #e4e4e4,
+  "staufenbielrot": #e11c23,
+  "rot": #ef2929,
+  "absolventenkongress-blau": #009fe3,
+  "absolventenkongress-gelb": #ffed00
+);
+
+$spacer: 5px;
+$border-radius: 7px;
+$spacers: map-merge( ( 0: 0, 1: ($spacer), 2: ($spacer * 2), 3: ($spacer * 3), 4: ($spacer * 4), 5: ($spacer * 5) ), () );
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+body{
+  font-size: 13px;
+  line-height: 1.31;
+}
+
+.nav-link:focus, button:focus {
+    outline: none;
+  }
+
+.bigleftBorder-Wiwi{
+  border-left: solid 5px #404e7c;
+}
+
+.bigleftBorder-Ing{
+  border-left: solid 5px #86cb92;
+}
+
+.bigleftBorder-GW{
+  border-left: solid 5px #f5d247;
+}
+
+.bigleftBorder-IT{
+  border-left: solid 5px #f25f5c;
+}
+
+.bigleftBorder-NatWi{
+  border-left: solid 5px #50514f;
+}
+
+.tutorialInfobox {
+  width: 80%;
+  max-width: 490px;
+	background: #ffed00;
+}
+
+.tutorialInfobox:after {
+	bottom: 100%;
+	left: 50%;
+  border: solid transparent;
+  content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+  pointer-events: none;
+  border-color: rgba(255, 237, 0, 0);
+	border-bottom-color: #ffed00;
+	border-width: 15px;
+	margin-left: -15px;
+}
+
+.tutorialInfoboxleft {
+  width: 80%;
+  max-width: 490px;
+  background: #ffed00;
+  border-radius: 7px;
+  border-top-left-radius: 0;
+}
+
+.tutorialInfoboxleft:after {
+	bottom: 100%;
+	left: 0;
+  border: solid transparent;
+  content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+  pointer-events: none;
+  border-width: 20px 0 0 15px;
+  border-color: transparent transparent transparent #ffed00;
+}
+
+.tutorialInfoboxright {
+  width: 80%;
+  max-width: 490px;
+  background: #ffed00;
+  border-radius: 7px;
+  border-top-right-radius: 0;
+}
+
+.tutorialInfoboxright:after {
+	bottom: 100%;
+  right: 0;
+  margin-right: 55px;
+  border: solid transparent;
+  content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+  pointer-events: none;
+  border-width: 0 0 20px 15px;
+  border-color: transparent transparent #ffed00 transparent;
+}
+
+.arrow_box-right {
+	position: relative;
+	background: #ffed00;
+}
+.arrow_box-right:after {
+	left: 100%;
+	top: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(255, 237, 0, 0);
+	border-left-color: #ffed00;
+	border-width: 15px;
+	margin-top: -15px;
+}
